@@ -4,10 +4,9 @@ package DuckUSim;
 public abstract class Duck {
 
     FlyBehavior flybehavior;
-    QuackBehavior quackBehavior;
+    QuackBehavior behavior;
 
     public Duck() {
-        
     }
 
     public abstract void display();
@@ -19,9 +18,7 @@ public abstract class Duck {
     }
 
     public void performQuack() {
-
-
-        quackBehavior.quack();
+        behavior.quack();
     }
 
     public void setFlybehavior(FlyBehavior fb){
@@ -30,10 +27,8 @@ public abstract class Duck {
         flybehavior = fb;
     }
 
-    public void setQuackBehavior(QuackBehavior qk){
-
-
-        quackBehavior = qk;
+    public void setBehavior(QuackBehavior qk){
+        behavior = qk;
     }
 
     public void swim() {
