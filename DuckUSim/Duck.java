@@ -6,6 +6,7 @@ public abstract class Duck {
     FlyBehavior flybehavior;
     QuackBehavior quackBehavior;
 
+
     public Duck() {
     }
 
