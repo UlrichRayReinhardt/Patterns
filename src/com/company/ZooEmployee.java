@@ -5,7 +5,10 @@ import java.util.Iterator;
 import java.util.List;
 
 
-class ZooEmployee {
+class ZooEmployee{
+CagesIterator cagesIterator;
+
+
 
     Cage createCage(CageType cageType, int number) {
         CageFactory cageFactory = new CageFactory();
@@ -19,7 +22,6 @@ class ZooEmployee {
         cage.animalsInCage.add(animal);}
         else createCage(cage.cageType, cage.getCageNumber() +1);
     }
-
 
 
 
