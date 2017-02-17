@@ -66,13 +66,7 @@ class ZooEmployee {
         Iterator<Cage> cages = cage.iterator();
         while (cages.hasNext()) {
             Cage currentcage = cages.next();
-            List<Animal> animals = currentcage.getAnimalsInCage();NJOFEU HWE[YR\
-
-            ]SP F
-                    -WEPOT
-                            -PSD
-                            ][ FS
-            ]G [S]
+            List<Animal> animals = currentcage.getAnimalsInCage();
 
             Iterator<Animal> iterator = animals.iterator();
             while (iterator.hasNext()) {
