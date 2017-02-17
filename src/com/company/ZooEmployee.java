@@ -18,7 +18,7 @@ CagesIterator cagesIterator;
     }
 
     void putInCage(Animal animal, Cage cage) {
-        if(!cage.isCageFull(cage.animalsInCage.size())){
+        if(!cage.isCageFull()){
         cage.animalsInCage.add(animal);}
         else createCage(cage.cageType, cage.getCageNumber() +1);
     }
