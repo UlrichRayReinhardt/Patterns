@@ -18,9 +18,11 @@ public class AnimalsTest {
   */
         animals.add(animalFactory.buildAnimal(AnimalType.CROW));
         animals.add(animalFactory.buildAnimal(AnimalType.CROW));
-        animals.add(animalFactory.buildAnimal(AnimalType.CROW));
-        animals.add(animalFactory.buildAnimal(AnimalType.CROW));
-        animals.add(animalFactory.buildAnimal(AnimalType.CROW));
+        /*
+       animals.add(animalFactory.buildAnimal(AnimalType.CROW));
+       animals.add(animalFactory.buildAnimal(AnimalType.CROW));
+       animals.add(animalFactory.buildAnimal(AnimalType.CROW));
+       */
     }
 
     public List<Animal> getAnimals() {

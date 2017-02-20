@@ -5,7 +5,10 @@ import java.util.Iterator;
 import java.util.List;
 
 
-class ZooEmployee {
+class ZooEmployee{
+CagesIterator cagesIterator;
+
+
 
     Cage createCage(CageType cageType, int number) {
         CageFactory cageFactory = new CageFactory();
@@ -15,13 +18,15 @@ class ZooEmployee {
     }
 
     void putInCage(Animal animal, Cage cage) {
-        if(!cage.isCageFull(cage.animalsInCage.size())){
-        cage.animalsInCage.add(animal);}
-        else createCage(cage.cageType, cage.getCageNumber() +1);
+        cage.animalsInCage.add(animal);
+        System.out.println("Put " + animal.name + " in " + cage.cageType);
     }
-
-
-
+void checkIsCageFull(Cage cage){
+        if(cage.isCageFull()){
+            System.out.println("Cage is full");
+        }else
+            System.out.println("Cage is not full");
+}
 
     Zoo putAnimalsInCages(Zoo zoo, List<Animal> animals) {
 
