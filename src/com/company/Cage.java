@@ -18,7 +18,7 @@ class Cage {
     }
 
     boolean isCageFull(){
-        return animalsInCage.size() >= cageSize;
+        return this.animalsInCage.size() >= cageSize;
     }
 
     public int getCageNumber(){
