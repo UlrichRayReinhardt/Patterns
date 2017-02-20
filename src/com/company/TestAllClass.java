@@ -11,16 +11,25 @@ public class TestAllClass {
         Zoo zoo = new Zoo();
         ZooEmployee zooemployee = new ZooEmployee();
 
-        zoo.getAquariums().add(zooemployee.createCage(CageType.AQUARIUM, 1));
-        zoo.getAviarys().add(zooemployee.createCage(CageType.AVIARY, 1));
-        zoo.getBirdCages().add(zooemployee.createCage(CageType.BIRDCAGE, 1)); //create default 3 cages for each type
+
+        zoo.getBirdCages().add(zooemployee.createCage(CageType.BIRDCAGE, 1));
         zoo.getBirdCages().add(zooemployee.createCage(CageType.BIRDCAGE, 2));
 
+        Animal first = animals.getAnimals().get(0);
+        Animal second = animals.getAnimals().get(0);
+        Animal third = animals.getAnimals().get(0);
 
-        // zooemployee.putInCage(zoo, animals.getAnimals());
 
-        zooemployee.printAnimalFromCage(zoo.getAquariums());
-        zooemployee.printAnimalFromCage(zoo.getAviarys());
+        zooemployee.putInCage(first, zoo.getBirdCages().get(0));
+        zooemployee.checkIsCageFull(zoo.getBirdCages().get(0));
+
+        zooemployee.putInCage(second, zoo.getBirdCages().get(0));
+        zooemployee.checkIsCageFull(zoo.getBirdCages().get(0));
+
+        zooemployee.putInCage(third, zoo.getBirdCages().get(0));
+        zooemployee.checkIsCageFull(zoo.getBirdCages().get(0));
+
         zooemployee.printAnimalFromCage(zoo.getBirdCages());
+
     }
 }
